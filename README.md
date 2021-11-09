@@ -1,7 +1,7 @@
-# PES-Assignment-4
-Code for Assignment 4 for PES, ECEN 5813, Fall 2021
+# Traffic-Controller
+Code developed for FRDM KL25Z.
 
-The objective of the assignment is to simulate a traffic controller system using PWM for LED, TSI module for crosswalk button, and Systick Timer for accurate timing. For extra credit, a GPIO interrupt is used to trigger a crosswalk signal. 
+The objective of the project is to simulate a traffic controller system using PWM for LED, TSI module for crosswalk button, and Systick Timer for accurate timing. A GPIO interrupt is used to trigger a crosswalk signal. 
 
 The outline of the state machine designed is shown below :
 ![fsm](https://user-images.githubusercontent.com/89494511/136880690-aa0b93d4-ed41-4a11-85e1-03821532ce8c.png)
@@ -54,15 +54,3 @@ fsm.h -> Header file for state machine function.
 This project has been executed on the MCUXpresso IDE on the FRDM-KL25Z board.
 
 Both Debug and Release builds have been included in this project.
-
-Extra Credit : Peer Review
-
-Name : Gautama Gandhi
-
-Date and Time of Review : 12-Oct-2021 2:00AM
-
-Overview of changes: 
-
-1. Added /r in the log statement to improve the readability of the log messages in the debug terminal.
-2. Identified missing use of macros in locations for constant value now represented as CROSSWALK_MASK in fsm.c
-3. Identified missing use of macros in location of constant value now represented as SCALE in led.c
